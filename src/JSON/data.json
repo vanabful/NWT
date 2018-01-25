@@ -1,0 +1,172 @@
+ [
+        {
+            "id": 1, 
+            "name": "Boni",
+            "type": "dog", 
+            "gender": "Male", 
+            "age": "1 year", 
+            "location": {
+                "id" : 1,
+                "city": "Split, Croatia",
+                "name": "Splitske šape",
+                "location" : "Šibenska 39",
+                "latitude": 43.5196604,
+                "longitude": 16.4545213,
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget urna nec lorem venenatis rhoncus. Nunc sed tortor quis leo ultrices blandit. Praesent consectetur venenatis tortor, nec ullamcorper orci auctor a. Curabitur in metus auctor orci mattis cursus quis a nisl.",
+                "ratings": 3,
+                "imageUrl": "animal-shelter2"
+            }, 
+            "image": "wallpaper", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget urna nec lorem venenatis rhoncus. Nunc sed tortor quis leo ultrices blandit. Praesent consectetur venenatis tortor, nec ullamcorper orci auctor a. Curabitur in metus auctor orci mattis cursus quis a nisl.",
+            "breed": "Maltezer",
+            "health": "Healthy",
+            "timeInAzil": "20 days",
+            "ageRange": "0-2"
+        },
+        {
+            "id": 2, 
+            "name": "Bonko",
+            "type": "dog", 
+            "gender": "Female", 
+            "age": "1 year", 
+            "location":  {
+                "id" : 1,
+                "city": "Split, Croatia",
+                "name": "Splitske šape",
+                "location" : "Šibenska 39",
+                "latitude": 43.5196604,
+                "longitude": 16.4545213,
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget urna nec lorem venenatis rhoncus. Nunc sed tortor quis leo ultrices blandit. Praesent consectetur venenatis tortor, nec ullamcorper orci auctor a. Curabitur in metus auctor orci mattis cursus quis a nisl.",
+                "ratings": 3,
+                "imageUrl": "animal-shelter2"
+            },  
+            "image": "maltezer1-main", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget urna nec lorem venenatis rhoncus. Nunc sed tortor quis leo ultrices blandit. Praesent consectetur venenatis tortor, nec ullamcorper orci auctor a. Curabitur in metus auctor orci mattis cursus quis a nisl.",
+            "breed": "Maltezer",
+            "health": "Healthy",
+            "timeInAzil": "10 days",
+            "ageRange": "0-2"
+        },
+        {
+            "id": 3, 
+            "name": "Fluffy",
+            "type": "dog", 
+            "gender": "Male", 
+            "age": "2 years", 
+            "location":  {
+                "id" : 1,
+                "city": "Split, Croatia",
+                "name": "Splitske šape",
+                "location" : "Šibenska 39",
+                "latitude": 43.5196604,
+                "longitude": 16.4545213,
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget urna nec lorem venenatis rhoncus. Nunc sed tortor quis leo ultrices blandit. Praesent consectetur venenatis tortor, nec ullamcorper orci auctor a. Curabitur in metus auctor orci mattis cursus quis a nisl.",
+                "ratings": 3,
+                "imageUrl": "animal-shelter2"
+            },  
+            "image": "labrador-main", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget urna nec lorem venenatis rhoncus. Nunc sed tortor quis leo ultrices blandit. Praesent consectetur venenatis tortor, nec ullamcorper orci auctor a. Curabitur in metus auctor orci mattis cursus quis a nisl.",
+            "breed": "Labrador",
+            "health": "Healthy",
+            "timeInAzil": "1 year",
+            "ageRange": "2-6"
+        },
+        {
+            "id": 4, 
+            "name": "Rex",
+            "type": "dog", 
+            "gender": "Male", 
+            "age": "2 months", 
+            "location":  {
+                "id" : 2,
+                "city": "Solin, Croatia",
+                "name": "Solinske šape",
+                "location" : "Dalmatinska ulica 16",
+                "latitude": 43.5464776,
+                "longitude": 16.4917528,
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget urna nec lorem venenatis rhoncus. Nunc sed tortor quis leo ultrices blandit. Praesent consectetur venenatis tortor, nec ullamcorper orci auctor a. Curabitur in metus auctor orci mattis cursus quis a nisl.",
+                "ratings": 2,
+                "imageUrl": "animal-shelter"
+            },  
+            "image": "mops1-main", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget urna nec lorem venenatis rhoncus. Nunc sed tortor quis leo ultrices blandit. Praesent consectetur venenatis tortor, nec ullamcorper orci auctor a. Curabitur in metus auctor orci mattis cursus quis a nisl.",
+            "breed": "Mops",
+            "health": "Healthy",
+            "timeInAzil": "1 month",
+            "ageRange": "0-2"
+        },
+        {
+            "id": 5, 
+            "name": "Medo",
+            "type": "dog", 
+            "gender": "Male", 
+            "age": "1 year", 
+            "location":  {
+                "id" : 3,
+                "city": "Zadar, Croatia",
+                "name": "Zadarske šape",
+                "location" : "Put Vrela 12",
+                "latitude": 44.1395665,
+                "longitude": 15.2404583,
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget urna nec lorem venenatis rhoncus. Nunc sed tortor quis leo ultrices blandit. Praesent consectetur venenatis tortor, nec ullamcorper orci auctor a. Curabitur in metus auctor orci mattis cursus quis a nisl.",
+                "ratings": 4,
+                "imageUrl": "animal-shelter2"
+            },  
+            "image": "chow-main", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget urna nec lorem venenatis rhoncus. Nunc sed tortor quis leo ultrices blandit. Praesent consectetur venenatis tortor, nec ullamcorper orci auctor a. Curabitur in metus auctor orci mattis cursus quis a nisl.",
+            "breed": "Chow",
+            "health": "Healthy",
+            "timeInAzil": "1 week",
+            "ageRange": "0-2"
+        },
+        {
+            "id": 6, 
+            "name": "Twitty",
+            "type": "dog", 
+            "gender": "Female", 
+            "age": "4 years", 
+            "location": {
+                "id" : 4,
+                "city": "Zagreb, Croatia",
+                "name": "Zagrebačke šape",
+                "location" : "Slavonska avenija 2",
+                "latitude": 45.7938905,
+                "longitude": 15.9572688,
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget urna nec lorem venenatis rhoncus. Nunc sed tortor quis leo ultrices blandit. Praesent consectetur venenatis tortor, nec ullamcorper orci auctor a. Curabitur in metus auctor orci mattis cursus quis a nisl.",
+                "ratings": 5,
+                "imageUrl": "animal-shelter2"
+            },   
+            "image": "wallpaper", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget urna nec lorem venenatis rhoncus. Nunc sed tortor quis leo ultrices blandit. Praesent consectetur venenatis tortor, nec ullamcorper orci auctor a. Curabitur in metus auctor orci mattis cursus quis a nisl.",
+            "breed": "Maltezer",
+            "health": "Healthy",
+            "timeInAzil": "1 year",
+            "ageRange": "2-6"
+        },
+        {
+            "id": 7, 
+            "name": "Twitty",
+            "type": "dog", 
+            "gender": "Female", 
+            "age": "4 months", 
+            "location": {
+                "id" : 4,
+                "city": "Zagreb, Croatia",
+                "name": "Zagrebačke šape",
+                "location" : "Slavonska avenija 2",
+                "latitude": 45.7938905,
+                "longitude": 15.9572688,
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget urna nec lorem venenatis rhoncus. Nunc sed tortor quis leo ultrices blandit. Praesent consectetur venenatis tortor, nec ullamcorper orci auctor a. Curabitur in metus auctor orci mattis cursus quis a nisl.",
+                "ratings": 5,
+                "imageUrl": "animal-shelter2"
+            },   
+            "image": "wallpaper", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget urna nec lorem venenatis rhoncus. Nunc sed tortor quis leo ultrices blandit. Praesent consectetur venenatis tortor, nec ullamcorper orci auctor a. Curabitur in metus auctor orci mattis cursus quis a nisl.",
+            "breed": "Maltezer",
+            "health": "Healthy",
+            "timeInAzil": "1 month",
+            "ageRange": "0-2"
+        }
+        
+]
+
