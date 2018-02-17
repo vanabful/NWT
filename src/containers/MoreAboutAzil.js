@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 
 import FontAwesome from 'react-fontawesome';
 import MyMapComponent from '../components/GoogleMaps.js';
-import Slider from '../components/Slider.js';
 
 
 class MoreAboutAzil extends Component {
@@ -43,11 +42,18 @@ class MoreAboutAzil extends Component {
 
         const ratings = this._getRatings();
         const emptyRatings = this._getEmptyRatings();
+
+        const azilImage = {
+            backgroundImage: "url(" + require('../images/' + this.props.azil.imageUrl + '.jpg') + ")",
+            overflow: "hidden"
+        };
         
         return (
             <section className="azil-section">
                 <div className="azil-section__container">
-                    <Slider imageUrl={this.props.azil.imageUrl}/>            
+                    <div className="azil-section__container__left" style={azilImage}>
+                        <div className="azil-section__container__left__overlay"></div>
+                    </div>            
                     <div className="azil-section__container__right">
                         <div className="azil-section__container__right__name-location">
                             <h2>{this.props.azil.name}</h2>
@@ -85,7 +91,7 @@ class MoreAboutAzil extends Component {
 
 function mapStateToProps(state) {
     return {
-        azil: state.animals.clickedAnimal.location
+        azil: state.filter.clickedAnimal.location
     };
 }
 

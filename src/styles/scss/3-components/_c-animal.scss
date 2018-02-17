@@ -2,6 +2,7 @@
     @include size (32%, 320px);
     margin: 0.7em 0 4em 0.7em;
     box-shadow: $box-shadow;
+    position: relative;
 
     &__image {
         @include size (100%, 70%);
@@ -22,6 +23,8 @@
             &__name {
                 color: $gray;
                 font-size: 1.42em;
+                margin: 5px 0;
+                font-weight: 600;
             }
 
             label {
@@ -43,6 +46,15 @@
                 margin: 0;
             }
         }
+    }
+
+    &__delete {
+        position: absolute;
+        top: -3.3%;
+        left: 97%;
+        font-size: 1.4em;
+        color: $light-pink;
+        cursor: pointer;
     }
 }
 

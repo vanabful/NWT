@@ -69,3 +69,25 @@ main {
 .stars-full{
     color: #e6c200;
 }
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0 0 0;
+    border: 1px solid $bila;
+    border-radius: 4px;
+    padding: 10px;
+
+    label {
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $green;
+    }
+}
+
+.form-control {
+    height: 18px;
+    box-shadow: none;
+}

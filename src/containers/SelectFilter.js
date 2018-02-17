@@ -82,8 +82,8 @@ class SelectFilter extends Component {
 
 function mapStateToProps(state) {
     return {
-        animals: state.animals.filteredAnimals,
-        filters: state.animals.filters
+        animals: state.filter.filteredAnimals,
+        filters: state.filter.filters
     };
 }
 

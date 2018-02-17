@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { filterAnimals, getFilteredAnimals, getAnimals, homeUnmounted } from '../redux/actions';
+import { filterAnimals, getFilteredAnimals, resetFilter, homeUnmounted } from '../redux/actions';
 
 import AutosuggestFilter from './AutosuggestFilter';
 
@@ -18,7 +18,7 @@ class HomeForm extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0);
-        this.props.actions.getAnimals();
+        this.props.actions.resetFilter();
     }
 
     handleChange(event) {
@@ -62,7 +62,7 @@ class HomeForm extends Component {
 
 function mapStateToProps(state) {
     return {
-      filters: state.animals.filters,
+      filters: state.filter.filters,
       animals: state.animals.animals
     };
 }
@@ -71,7 +71,7 @@ function mapDispatchToProps(dispatch) {
     return {
         actions: bindActionCreators(
         {
-            getAnimals,
+            resetFilter,
             filterAnimals,
             getFilteredAnimals,
             homeUnmounted

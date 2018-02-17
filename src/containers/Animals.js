@@ -6,6 +6,7 @@ import { getFilteredAnimals, extendedFilter } from '../redux/actions';
 import Animal from './Animal';
 import Filter from '../components/Filter';
 import Error from '../components/Error';
+import AddForm from './AddForm';
 
 
 class Animals extends Component {
@@ -14,9 +15,12 @@ class Animals extends Component {
         super(props);
         this.state = {
             size: 6,
-            showFilter: false
+            showFilter: false,
+            showForm: false
         }
         this.filterMore = this.filterMore.bind(this);
+        this.addAnimal = this.addAnimal.bind(this);
+        this.cancelAdd = this.cancelAdd.bind(this);
     }
 
     filterMore(event) {
@@ -30,6 +34,7 @@ class Animals extends Component {
                 <Animal 
                     animal = {animal}
                     key={animal.id} 
+                    id = {animal.id}
                 />
             );
         })
@@ -37,6 +42,14 @@ class Animals extends Component {
 
     onClick() {
         this.setState({ showFilter: !this.state.showFilter })
+    }
+
+    addAnimal() {
+        this.setState({ showForm: !this.state.showForm })
+    }
+
+    cancelAdd() {
+        this.setState({ showForm: false });
     }
 
 
@@ -56,7 +69,13 @@ class Animals extends Component {
                 <div className="a-section__animals">
                     {this.props.filteredAnimals.length > 0 ? data : <Error />}
                 </div>
-                {this.props.filteredAnimals.length > 0 ? <input onClick={this._getMoreAnimals} className="a-section__more-animals" type="button" value="More" /> : null}
+                {this.props.filteredAnimals.length > 0 ? 
+                    <div className="a-section__add"  >
+                        <img src={require('../images/plus-pink.png')} alt="add" onClick={this.addAnimal}/>
+                    </div>
+                : null}
+
+                {this.state.showForm ? <AddForm cancel={this.cancelAdd} showAddForm={this.addAnimal.bind(this)}/> : null}
             </section>
         );
     }
@@ -64,8 +83,8 @@ class Animals extends Component {
 
 function mapStateToProps(state) {
     return {
-        filteredAnimals: state.animals.filteredAnimals,
-        filters: state.animals.filters,
+        filteredAnimals: state.filter.filteredAnimals,
+        filters: state.filter.filters,
         animals: state.animals.animals
     };
 }

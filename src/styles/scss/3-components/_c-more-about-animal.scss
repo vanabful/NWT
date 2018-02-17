@@ -36,6 +36,11 @@
             &__name-age-gender {
                 @include display-flex (row, center, space-between);
                 width: 100%;
+                margin-bottom: 10px;
+
+                h2 {
+                    margin: 0;
+                }
             }
 
             &__description {

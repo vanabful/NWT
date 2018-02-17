@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { clickedAnimal } from '../redux/actions';
+import { clickedAnimal, deleteAnimal } from '../redux/actions';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import FontAwesome from 'react-fontawesome';
 
 
 class Animal extends Component {
@@ -10,11 +11,17 @@ class Animal extends Component {
     constructor(props) {
         super(props);
         this.onClick = this.onClick.bind(this);
+        this.handleDelete = this.handleDelete.bind(this);
     }
 
     onClick(event) {
         this.props.actions.clickedAnimal(this.props.animal);
     } 
+
+    handleDelete() {
+        console.log(this.props.id);
+        this.props.actions.deleteAnimal(this.props.id);
+    }
 
     render() {
 
@@ -22,7 +29,7 @@ class Animal extends Component {
 
         return (
             <div className="animal">
-                <div className="animal__image">
+                <div className="animal__image">    
                     <img src={require('../images/' + animal.image + '.jpg')} alt={animal.name}/>
                 </div>
                 <div className="animal__info">
@@ -35,6 +42,7 @@ class Animal extends Component {
                         <input type="button" value="View" onClick={this.onClick} />
                     </Link>
                 </div>
+                <FontAwesome name="times" className="animal__delete" onClick={this.handleDelete}/>
             </div>
         );
     }
@@ -48,7 +56,8 @@ function mapDispatchToProps(dispatch) {
     return {
         actions: bindActionCreators(
         {
-            clickedAnimal
+            clickedAnimal,
+            deleteAnimal
         },
         dispatch
         )

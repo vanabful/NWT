@@ -28,7 +28,7 @@
 
                 &__type, &__breed {
                     width: 33%;
-                    margin: 0 0 0 1em;
+                    margin: 0;
                     color: $input-text;
                     padding: 18px;
                     border: 1px solid $input-border;
@@ -38,7 +38,6 @@
 
                 &__age-gender {
                     width: 31%;
-                    margin-bottom: 0.9em;
                     display: flex;
                     justify-content: space-between;
 

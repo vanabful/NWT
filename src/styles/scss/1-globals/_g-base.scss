@@ -13,6 +13,20 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+input:focus{
+    outline: none !important;
+}
+
+label {
+    font-weight: 400;
+    margin: 0;
+}
+
 input, select {
     padding: 20px;
     margin: 8px 0;

@@ -36,6 +36,10 @@
             &__name-location {
                 @include display-flex (row, center, space-between);
                 width: 100%;
+
+                h2 {
+                    margin: 0;
+                }
             }
 
             &__description {

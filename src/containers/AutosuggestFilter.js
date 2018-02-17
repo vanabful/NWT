@@ -110,7 +110,7 @@ class AutosuggestFilter extends Component {
 
 function mapStateToProps(state) {
     return {
-        filters: state.animals.filters
+        filters: state.filter.filters
     };
 }
 

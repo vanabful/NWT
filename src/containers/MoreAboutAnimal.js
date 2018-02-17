@@ -2,16 +2,23 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import Slider from '../components/Slider.js';
 import FontAwesome from 'react-fontawesome';
 
 class MoreAboutAnimal extends Component {
 
     render() {
+
+        const animalImage = {
+            backgroundImage: "url(" + require('../images/' + this.props.animal.image + '.jpg') + ")",
+            overflow: "hidden"
+        };
+
         return(
             <section className="animal-more">
                 <div className="animal-more__container">
-                    <Slider imageUrl={this.props.animal.image}/>    
+                    <div className="animal-more__container__left" style={animalImage}>
+                        <div className="animal-more__container__left__overlay"></div>
+                    </div>    
                     <div className="animal-more__container__right">
                         <div className="animal-more__container__right__name-age-gender">
                             <h2>{this.props.animal.name}</h2>
@@ -40,7 +47,7 @@ class MoreAboutAnimal extends Component {
 
 function mapStateToProps(state) {
     return {
-        animal: state.animals.clickedAnimal
+        animal: state.filter.clickedAnimal
     };
 }
 

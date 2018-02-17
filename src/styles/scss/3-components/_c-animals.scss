@@ -1,10 +1,11 @@
 .a-section {
     grid-area: main;
     @include display-flex (column, center, center);
+    min-height: 90vh;
 
     &__filter-more {
         @include display-flex (row, initial, initial);
-        margin: 0 0 1em 11.4%;
+        margin: 0 0 1em 10.8%;
         border-radius: 4px;
         align-self: end;
         text-align: center;
@@ -45,6 +46,18 @@
         text-transform: uppercase;
 
     @media screen and (max-width: $small-screen) { width: 80%; }
+    }
+
+    &__add {
+        position: fixed;
+        @include size (50px, 50px);
+        left: 93%;
+        bottom: 8%;
+        cursor: pointer;
+
+        img {
+            @include size (100%, 100%);
+        }
     }
 }
 
